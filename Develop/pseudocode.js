@@ -37,3 +37,5 @@
 //retrieve from local storage if page is refreshed
 //color code time blocks for past, present future 
 // (i'm thinking light red for past, green for current and light blue for future)
+
+//need to somehow link my divs to actual times
