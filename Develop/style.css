@@ -3,6 +3,10 @@ body {
   font-size: 16px;
 }
 
+.lead {
+  padding-top: 20px;
+}
+
 textarea {
   background: transparent;
   border: none;
