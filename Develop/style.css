@@ -12,7 +12,6 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
 }
 
@@ -30,12 +29,12 @@ textarea {
 
 .time-block{
   text-align: center;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .row {
   white-space: pre-wrap;
-  border-top: 1px solid white;;
+  border-top: 1px solid gray;;
 }
 
 .hour {
@@ -59,11 +58,17 @@ textarea {
   color: white;
 }
 
+.btn {
+  padding: 0px;
+}
 .saveBtn {
   border-radius: 15px;
   background-color: #06AED5;
   color: white;
-  padding: 0;
+  padding-right: 20px;
+  font-size: 15px;
+  align-content: center;
+  display: flex;
 }
 
 .saveBtn i:hover {
