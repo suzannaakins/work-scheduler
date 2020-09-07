@@ -27,11 +27,6 @@ textarea {
   white-space: pre-wrap;
 }
 
-.time-block{
-  text-align: center;
-  border-radius: 0px;
-}
-
 .row {
   white-space: pre-wrap;
   border-top: 1px solid gray;;
@@ -74,4 +69,9 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.form-group {
+  margin: 0 auto;
+  width: 100%;
 }

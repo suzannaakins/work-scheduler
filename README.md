@@ -14,6 +14,6 @@ This application uses Bootstrap to style the timeblocks into rows and columns.  
 
 ## Enjoy!
 
-Here is a preview of what you'll be working with:  ![Quiz Start Page](./images/preview.png)
+Here is a preview of what you'll be working with:  ![Quiz Start Page](./preview.png)
 
 And now, get scheduling! https://suzannaakins.github.io/work-scheduler/

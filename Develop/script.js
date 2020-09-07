@@ -29,20 +29,6 @@ var updateTime = function () {
 
 updateTime();
 
-
-// //save button - on click, will append textarea of input form to the html page, and store to local storage
-// $(".saveBtn").on("click", function () {
-//     var taskText = $("<textarea>").val();
-//     console.log(taskText);
-//     localStorage.setItem("tasks", JSON.stringify(taskText));
-// });
-
-// var loadTasks = function () {
-//     uploadTasks = JSON.parse(localStorage.getItem("tasks"));
-// }
-
-// loadTasks();
-
 // //variables for text input
 var text9 = $("#9")
 var text10 = $("#10")
@@ -54,6 +40,7 @@ var text3 = $("#3")
 var text4 = $("#4")
 var text5 = $("#5")
 
+//save text inputs to local storage upon Save Button click
 $(".saveBtn").on("click", function () {
     var text9 = $("#9").val().trim();
     $("<textarea>").append(text9);
@@ -108,8 +95,9 @@ $(".saveBtn").on("click", function () {
 });
 
 
+//load tasks when page is refreshed
 var loadTask9 = function () {
-    timeBlockArray[0].textarea = JSON.parse(localStorage.getItem("text9"));
+    text9.val = JSON.parse(localStorage.getItem("task9"));
 }
 var loadTask10 = function () {
     timeBlockArray[1].textarea = JSON.parse(localStorage.getItem("text10"));
@@ -146,14 +134,11 @@ loadTask3();
 loadTask4();
 loadTask5();
 
-// give textareas ids, on save, set those to values, then push the strings into local storage with the textarea ids as the key for localstorage
-// will have about ten localstroage items, and get local storages. 
 
-
-//FIND ELEMENT CLICKED
-var pageBodyEl = document.querySelector(".container");
-console.log(pageBodyEl)
-var findElement = function (event) {
-    console.log(event.target)
-};
-pageBodyEl.addEventListener("click", findElement);
+// //FIND ELEMENT CLICKED
+// var pageBodyEl = document.querySelector(".container");
+// console.log(pageBodyEl)
+// var findElement = function (event) {
+//     console.log(event.target)
+// };
+// pageBodyEl.addEventListener("click", findElement);
