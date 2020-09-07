@@ -44,84 +44,85 @@ var text5 = $("#5")
 $(".saveBtn").on("click", function () {
     var text9 = $("#9").val().trim();
     $("<textarea>").append(text9);
-    localStorage.setItem("text9", JSON.stringify(text9));
+    localStorage.setItem("text9", text9);
 });
 
 $(".saveBtn").on("click", function () {
     var text10 = $("#10").val().trim();
     $("<textarea>").append(text10);
-    localStorage.setItem("text10", JSON.stringify(text10));
+    localStorage.setItem("text10", text10);
 });
 
 $(".saveBtn").on("click", function () {
     var text11 = $("#11").val().trim();
     $("<textarea>").append(text11);
-    localStorage.setItem("text11", JSON.stringify(text11));
+    localStorage.setItem("text11", text11);
 });
 
 $(".saveBtn").on("click", function () {
     var text12 = $("#12").val().trim();
     $("<textarea>").append(text12);
-    localStorage.setItem("text12", JSON.stringify(text12));
+    localStorage.setItem("text12", text12);
 });
 
 $(".saveBtn").on("click", function () {
     var text1 = $("#1").val().trim();
     $("<textarea>").append(text1);
-    localStorage.setItem("text1", JSON.stringify(text1));
+    localStorage.setItem("text1", text1);
 });
 
 $(".saveBtn").on("click", function () {
     var text2 = $("#2").val().trim();
     $("<textarea>").append(text2);
-    localStorage.setItem("text2", JSON.stringify(text2));
+    localStorage.setItem("text2", text2);
 });
 
 $(".saveBtn").on("click", function () {
     var text3 = $("#3").val().trim();
     $("<textarea>").append(text3);
-    localStorage.setItem("text3", JSON.stringify(text3));
+    localStorage.setItem("text3", text3);
 });
 
 $(".saveBtn").on("click", function () {
     var text4 = $("#4").val().trim();
     $("<textarea>").append(text4);
-    localStorage.setItem("text4", JSON.stringify(text4));
+    localStorage.setItem("text4", text4);
 });
 $(".saveBtn").on("click", function () {
     var text5 = $("#5").val().trim();
     $("<textarea>").append(text5);
-    localStorage.setItem("text5", JSON.stringify(text5));
+    localStorage.setItem("text5", text5);
 });
 
 
 //load tasks when page is refreshed
 var loadTask9 = function () {
-    text9.val = JSON.parse(localStorage.getItem("task9"));
+    document.getElementById("9").innerHTML = localStorage.getItem("text9");
 }
 var loadTask10 = function () {
-    timeBlockArray[1].textarea = JSON.parse(localStorage.getItem("text10"));
+    document.getElementById("10").innerHTML = localStorage.getItem("text10");
 }
 var loadTask11 = function () {
-    timeBlockArray[2].textarea = JSON.parse(localStorage.getItem("text11"));
+    document.getElementById("11").innerHTML = localStorage.getItem("text11");
 }
 var loadTask12 = function () {
-    timeBlockArray[3].textarea = JSON.parse(localStorage.getItem("text12"));
+    document.getElementById("12").innerHTML = localStorage.getItem("text12");
 }
 var loadTask1 = function () {
-    timeBlockArray[4].textarea = JSON.parse(localStorage.getItem("text1"));
+    document.getElementById("1").innerHTML = localStorage.getItem("text1");
 }
+
 var loadTask2 = function () {
-    timeBlockArray[5].textarea = JSON.parse(localStorage.getItem("text2"));
+    document.getElementById("2").innerHTML = localStorage.getItem("text2");
 }
 var loadTask3 = function () {
-    timeBlockArray[6].textarea = JSON.parse(localStorage.getItem("text3"));
+    document.getElementById("3").innerHTML = localStorage.getItem("text3");
 }
 var loadTask4 = function () {
-    timeBlockArray[7].textarea = JSON.parse(localStorage.getItem("text4"));
+    document.getElementById("4").innerHTML = localStorage.getItem("text4");
 }
 var loadTask5 = function () {
-    timeBlockArray[8].textarea = JSON.parse(localStorage.getItem("text5"));
+    document.getElementById("5").innerHTML = localStorage.getItem("text5");
 }
 
 loadTask9();
